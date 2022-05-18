@@ -1,0 +1,70 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px;
+}
+
+nav .logo img {
+  width: 205px;
+  max-width: 100%;
+  height: 25px;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation ul li {
+  padding-left: 60px;
+}
+
+.navigation ul .home-drpdown {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  display: none;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.navigation ul a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.navigation ul .home-drpdown::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.navigation ul .home-drpdown:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
