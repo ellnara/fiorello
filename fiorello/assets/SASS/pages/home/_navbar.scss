@@ -1,49 +1,55 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding-top: 44px;
+  padding-bottom: 30px;
   .logo img {
-    width: 205px;
-    max-width: 100%;
+    width: 212px;
     height: 25px;
   }
 }
-.navigation ul {
-  display: flex;
-  list-style-type: none;
-  li {
-    padding-left: 60px;
-  }
-  .home-drpdown {
-    display: inline-block;
-    position: relative;
-    color: #0087ca;
-    display: none;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 1px;
-    &:hover {
-      text-decoration: underline;
+header {
+  box-shadow: 0px 8px 8px 0px rgba(134, 134, 134, 0.2);
+}
+.navigation {
+  height: 100%;
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding-left: 24px;
+    }
+    a {
+      text-decoration: none;
       color: black;
+      position: relative;
+      font-size: 13px;
+      letter-spacing: 2px;
+      padding-left: 30px;
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+    }
+    li > a:hover + .home-drpdown {
+      visibility: visible;
+      transition: 1s;
     }
   }
-  .home-drpdown::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .home-drpdown:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+}
+.home-drpdown {
+  padding: 29px 0;
+  color: #000000;
+  visibility: hidden;
+  background-color: white;
+  z-index: 1;
+  width: 200px;
+  position: absolute;
+  margin-top: 40px;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 3%);
+  a {
+    display: block;
+    height: auto;
+    width: 210px;
   }
 }
