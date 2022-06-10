@@ -1,0 +1,40 @@
+.suprise-ur-valentine {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 550px;
+    height: 356px;
+  }
+  .summary {
+    width: 440px;
+    font-family: sans-serif;
+    p {
+      color: rgb(83, 83, 83);
+      font-size: 17px;
+    }
+    h3 {
+      width: 450px;
+      font-size: 40px;
+    }
+    span {
+      color: red;
+    }
+    ul {
+      padding: 0;
+      list-style-type: none;
+      font-size: 18px;
+      color: rgb(116, 116, 116);
+      img {
+        width: 19px;
+        height: 18px;
+      }
+      li {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+#valentine {
+  position: relative;
+  top: 1600px;
+}

@@ -1,0 +1,33 @@
+#experts {
+  position: relative;
+  top: 1800px;
+  font-family: sans-serif;
+  .general-info {
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      color: rgb(99, 99, 99);
+    }
+  }
+  .experts-item {
+    width: 222px;
+    height: 222px;
+    text-align: center;
+  }
+  .expert-info {
+    margin-top: 20px;
+    font-size: 12px;
+    span {
+      color: gray;
+    }
+  }
+}
+.about-experts {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-evenly;
+}
